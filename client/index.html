@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PIXIT | Smoothies for Smooth</title>
+    <base href="/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <a href="#" class="navTog">
+        <div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </a>
+    <a href="#" class="navTog2">
+        <div>
+            <div class="box1"></div>
+            <div class="box2"></div>
+        </div>
+    </a>
+    <nav class="nav">
+        <ol>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCTS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">SHOPPING CART</a></li>
+        </ol>
+    </nav>
+    <a id="more" href="#">-More Products
+    </a>
+    <a id="made" href="#">Made with Love <span>❤</span> HTML, CSS, JS</a>
+    <a href="https://github.com"> <img id="src" src="./imgs/github.png"></a>
+
+
+
+    <div class="cour swiper-container">
+        <div class="courSlide swiper-wrapper">
+            <div class="swiper-slide"> <img src="./imgs/backStraw-min.png" alt="">
+                <div class="fruits" id="redimgs">
+                    <img src="./imgs/strawbery1-min.png" class="str1" alt="">
+                    <img src="./imgs/strawbery2blur-min.png" class="str3" alt="">
+                    <img src="./imgs/strawbery2-min.png" class="str4" alt="">
+                    <img src="./imgs/strawbery1blur-min.png" class="str2" alt="">
+                    <img src="./imgs/leaf-min.png" class="leaf1" alt="">
+                </div>
+                <img class="bottle" src="./imgs/redSmooth-min.png" id="strawImg" alt="">
+
+                <div class="redText">
+                    <h1>PIXIT</h1>
+
+                    <h2>Strawbery Fantasy</h2>
+                    <p>The original flavour of Strawbery</p>
+                    <a class="CTA" id="CTAR" href="#">RP 499 | BUY NOW</a>
+                </div>
+            </div>
+            <div class="swiper-slide"> <img src="./imgs/backMango-min.jpg" alt="">
+
+                <div class="fruits" id="yellowimgs">
+                    <img src="./imgs/mango1-min.png" class="str1" alt="">
+                    <img src="./imgs/mango2blur-min.png" class="str3" alt="">
+                    <img src="./imgs/mango2-min.png" class="str4" alt="">
+                    <img src="./imgs/mango1blur-min.png" class="str2" alt="">
+                    <img src="./imgs/leaf-min.png" class="leaf1" alt="">
+                </div>
+                <img class="bottle" src="./imgs/yellowSmooth-min.png" id="mangoImg" alt="">
+
+                <div class="yellowText">
+                    <h1>PIXIT</h1>
+
+                    <h2>Mango Fantasy</h2>
+                    <p>The original flavour of Strawbery</p>
+                    <a class="CTA" id="CTAY" href="#">RP 499 | BUY NOW</a>
+                </div>
+            </div>
+            <div class="swiper-slide"> <img src="./imgs/backGauva-min.jpg" alt="">
+                <div class="fruits" id="greenimgs">
+                    <img src="./imgs/gauva1i-min.png" class="str1" alt="">
+                    <img src="./imgs/gauva1blur-min.png" class="str3" alt="">
+                    <img src="./imgs/strawbery2-min.png" class="str4" alt="">
+                    <img src="./imgs/strawbery1blur-min.png" class="str2" alt="">
+                    <img src="./imgs/leaf-min.png" class="leaf1" alt="">
+                </div>
+                <img class="bottle" src="./imgs/greenSmooth-min.png" id="gauvaImg" alt="">
+
+
+                <div class="greenText">
+                    <h1>PIXIT</h1>
+                    <h2>Gauva Fantasy</h2>
+                    <p>The original flavour of Strawbery</p>
+                    <a class="CTA" id="CTAG" href="#">RP 499 | BUY NOW</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            //   loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })
+    </script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
